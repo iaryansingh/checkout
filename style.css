@@ -14,6 +14,10 @@ html{
   scroll-behavior: smooth;
 }
 
+input:focus {
+  border: 2px solid white;
+}
+
 :root {
   /* Background Color */
   --primary-color: #768CE3;
@@ -125,8 +129,7 @@ html{
     width: 420px;
     /* border: 2px solid black; */
     margin: 20px;
-    flex-direction: column;
-    
+    flex-direction: column;  
    }
 
    .summary-head{
@@ -143,7 +146,7 @@ html{
    }
 
    #MenuItems{
-    
+   
   }
   
   .product{
@@ -151,6 +154,7 @@ html{
     width: 100%;
     padding: 10px 0px 10px 0px;
     box-sizing: border-box;
+   
    }
 
  .product img{
@@ -257,7 +261,10 @@ html{
   height: 300px;
   width: 405px;
   background-color: var(--primary-color);
+  
 }
+
+
 .card-holder{
 padding: 10px 0px 0px 10px;
 }
@@ -278,17 +285,18 @@ padding: 10px 0px 0px 10px;
   padding: 10px 0px 0px 10px;
 }
 #cardnumber{
-  width: 25%;
+  width: 22%;
   padding: 5px 5px 5px 5px;
   box-sizing: border-box;
   margin: 05px 10px;
+ margin-right: 20px;
 }
 
 .card-back{
   display: flex;
   width: 100%;
   justify-content: space-between;
-  /* flex-direction: row; */
+  flex-direction: row;
   /* background-color: tomato; */
   margin: 20px 10px;
   
@@ -299,24 +307,27 @@ padding: 10px 0px 0px 10px;
   /* padding: 5px 5px 5px 5px; */
   background-color: var(--secondary-color);
   flex-basis: 20%;
+  height: 60%;
   color: white;
+  font-size: 15px;
 }
 
 
 #cvv{
   padding: 5px 5px 5px 5px;
   background-color: var(--secondary-color);
-  border-color: beige;
+  
 }
 
-.date, .cvv{
-  flex-basis: 30%;
+.date, .cvv, .cardsave{
+  width: 30%;
+  
 }
 
 .cardsave{
   display: flex;
  font-size: 15px;
- flex-basis: 40%;
+ flex-basis: 32%;
  display: flex;
  flex-direction: row;
  justify-content: flex-end;
