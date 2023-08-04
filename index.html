@@ -48,36 +48,39 @@
             <div class="container1">
                 <div class="summary-head">
                     <h4> Summary of your order</h4>
-                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-plus" class="menu-icon" onclick="menutoggle()" alt="more details"></i>
                 </div>
+               <div class="#" id="MenuItems">
+                    <div class="product" >
+                        <div class="img-left">
+                            <img src=" image1/img1.jpg" alt="image not found">
+                        </div>
+                        <div class="product-detail"  >
+                            <h5> <a href="#" >Lorem ipsum dolor sit amet.</a> </h5>
+                            <div class="product-summary">
+                                <div class="element-1">Color: blue</div>  
+                                <div class="element-2">Size:2</div>
+                                <div class="element-3">₹499</div>
+                            </div>
+                        </div>
+                    </div>
             
-                <div class="product">
-                    <div class="img-left">
-                        <img src=" image1/img1.jpg" alt="image not found">
-                    </div>
-                    <div class="product-detail">
-                        <h5> <a href="##" >Lorem ipsum dolor sit amet.</a> </h5>
-                        <div class="product-summary">
-                            <div class="element-1">Color: blue</div>  
-                            <div class="element-2">Size:2</div>
-                            <div class="element-3">₹499</div>
+                    <div class="product">
+                        <div class="img-left">
+                            <img src=" image1/img1.jpg" alt="image not found">
+                        </div>
+
+                        <div class="product-detail" >
+                            <h5>  <a href="##" > Lorem ipsum dolor sit amet.</a> </h5>
+                            <div class="product-summary">
+                                <div class="element-1">Color:blue</div>  
+                                <div class="element-2">Size:2</div>
+                                <div class="element-3">₹499</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-        
-                <div class="product">
-                    <div class="img-left">
-                        <img src=" image1/img1.jpg" alt="image not found">
-                    </div>
-                    <div class="product-detail">
-                        <h5>  <a href="##" > Lorem ipsum dolor sit amet.</a> </h5>
-                        <div class="product-summary">
-                            <div class="element-1">Color:blue</div>  
-                            <div class="element-2">Size:2</div>
-                            <div class="element-3">₹499</div>
-                        </div>
-                    </div>
-                </div>
+               </div>
+               
                 <hr>
         
                 <div class="shipping">
@@ -131,11 +134,11 @@
                     </div>
         
                     <div class="card-back">
-                        <div class="#">
+                        <div class="date">
                             <label for="date"> <h5>Expire Date</h5> </label>
                           <input type="date" name="expiredate"  id="date">
                         </div>
-                        <div class="#">
+                        <div class="cvv">
                          <label for="cvv"> <h5>CVV</h5> </label>
                           <input type="text" name="cvv" id="cvv" placeholder="0000">
                         </div>
@@ -166,5 +169,29 @@
         </div>  
     </div>
   
+
+    <!-- --------------js for toggle menu------------- -->
+   <script>
+
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "200px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "200px")
+        {
+            MenuItems.style.maxHeight = "450px"
+            MenuItems.style.display = "block"
+           
+
+        }
+        else
+        {
+          MenuItems.style.maxHeight = "200px"
+          MenuItems.style.display = "none"
+        }
+    }
+   </script>
+
 </body>
 </html>
